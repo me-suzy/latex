@@ -1,0 +1,158 @@
+\documentclass[journal,noindent,headline,twoside,indent,a4paper,12pt]{paper_RDMI}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2cm,right=2cm,a4paper]{geometry} % Page margins
+\usepackage[english,latin,romanian]{babel}
+\usepackage{pdfpages}
+\usepackage{microtype}
+\usepackage{xcolor}
+\definecolor{ocre}{RGB}{243,102,25} % Define the orange color used for highlighting throughout the book
+\usepackage{lipsum} % for dummy text only
+\usepackage[colorlinks,linkcolor=blue!50!black]{hyperref}
+\usepackage{graphicx}
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{latexsym}
+\usepackage{amsthm}
+\usepackage{verbatim}
+\usepackage{extarrows}
+\usepackage{combelow}
+\usepackage{pgf-pie}
+%\usepackage{titling}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage{caption}
+\usepackage{lipsum}
+\usepackage{hyperref}
+\usepackage{bookmark}
+\usepackage[vlined]{algorithm2e}
+%\usepackage{titlesec}
+
+\newcommand{\w}{\O}
+\renewcommand{\emptyset}{\O}
+\newcommand{\ov}{\overline}
+\newcommand{\grad}{\mathrm{grad\,}}
+\newcounter{p}%[chapter]
+\setcounter{p}{0}
+\renewcommand{\thep}{\arabic{p}.}
+\newenvironment{p}{
+\par\bigskip\noindent
+\refstepcounter{p}
+{\bf\thep}
+\bgroup
+}{
+%\rule{0.5em}{0.5em}
+\egroup %\par\bigskip
+}
+%L
+%A
+\newcommand{\modul}[1]{\bigl|{#1}\bigr|}
+\newcommand{\sumM}[1]{\begin{displaystyle}\sum#1\end{displaystyle}}
+%A
+\newcommand{\fract}[2]{\displaystyle\frac{#1}{#2}}
+\newcommand{\sums}{\displaystyle\sum}
+\newcommand{\lil}[1]{\lim\limits_{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\K}{\mathbb K}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\C}{\mathbb C}
+\newcommand{\Mc}{\mathcal{M}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\Mod}{\mathrm{mod\;}}
+\newcommand{\Rang}{\mathrm{rang\,}}
+\newcommand{\Card}{\mathrm{card\,}}
+\newcommand{\lp}{\left(}
+\newcommand{\rp}{\right)}
+\newcommand{\mo}[1]{\left|{#1}\right|}
+\newcommand{\Int}{\textrm{Int}\,}
+\newcommand{\tg}{\mathrm{tg\,}}
+\newcommand{\ctg}{\mathrm{ctg\,}}
+\newcommand{\arctg}{\mathrm{arctg\,}}
+\newcommand{\re}{\mathrm{Re\,}}
+\newcommand{\im}{\mathrm{Im\,}}
+\newcommand{\integ}{\displaystyle\int}
+\newcommand{\OM}{\mathcal{O}\,}
+\newcommand{\card}{\text{\rm card}}
+\newcommand{\intl}[2]{\int\limits_{#1}^{#2}}
+\newcommand{\tr}{\mathrm{tr\;}}
+
+\newtheorem{defi}{Defini\cb{t}ia}
+\newtheorem{teo}{Teorema}
+\newtheorem{prop}{Propozi\cb{t}ia}
+\newtheorem*{prop*}{Propozi\cb tie}
+\newtheorem{app}{Aplica\cb tia}
+\newtheorem{pbR}{\bf{M}}                           % PROBLEMA REZOLVATA
+\newtheorem{probl}{Problema}
+\newtheorem{exc}{Exerci\cb tiul}
+%\renewcommand{\proofname}{Solu\cb{t}ie}
+\newenvironment{sol}{\noindent{\it{Solu\cb tie. }}}{}
+\renewcommand{\refname}{BIBLIOGRAFIE}
+\renewcommand{\proofname}{Demonstra\cb{t}ie}
+\newtheorem{apl}{Aplica\cb{t}ia}
+\newtheorem{cor}{Corolarul}
+\newtheorem{lema}{Lema}
+
+\theoremstyle{remark}
+\newtheorem{obs}{Observa\cb{t}ia}
+\newtheorem{ex}{Exemplul}
+\newtheorem{pb}{\bf{M}}
+\newtheorem{pbi}{\bf{I}}
+\newtheorem{pbo}{\bf{O}}
+\newenvironment{solu}{\vspace{-10pt}\noindent{\bf Solu\cb tie:}}{\hfill$\square$}                         % PROBLEMA PROPUSA
+
+
+\newcommand{\ResetContoare}
+{
+\setcounter{defi}{0}
+\setcounter{teo}{0}
+\setcounter{prop}{0}
+\setcounter{app}{0}
+\setcounter{probl}{0}
+\setcounter{exc}{0}
+\setcounter{obs}{0}
+\setcounter{figure}{0}
+}
+
+\begin{document}
+\title{Titlu articol}
+\shorttitle{Titlu scurt pentru antet (dacă este cazul a fi scurtat}
+\author{Prenume Nume
+\thanks{Profesor, Unitatea de învățământ, Localitatea, E-mail}}
+\shortauthor{Inițiala Prenume. Nume}
+\institution{}
+\date{\today}
+\maketitle
+
+\section{Reguli importante de scriere}
+Textul va fi scris în Word normal la un rând cu Times New Roman, 12 pt.
+Toate variabilele și relațiile matematice se vor scrie în modul equation/mathtype $n\ge 4$, iar în LaTex între 2 dolari - $a_{1} ,a_{2} ,\ldots ,a_{n} \ge 0$.
+Relațiile importante vor fi centrate pe rând nou - Exemple:
+$$\mathop{\sum }\limits_{1\le i<j\le n} a_{i} a_{j} =\frac{n\left(n-1\right)}{2}.$$
+sau
+\[\sqrt{\frac{n-2}{n} } \cdot \left(a_{1} +a_{2} +\ldots +a_{n} \right)+\frac{\left(\sqrt{n} -\sqrt{n-2} \right)^{2} }{2} \cdot a_{1} a_{2} \ldots a_{n} \ge n-1.\]
+\section{Alte  exemple}
+Enumerare:
+\begin{enumerate}
+\item $a_{1} +a_{2} +\ldots +a_{n} \ge n.$
+\item If $a_{1} ,a_{2} ,\ldots ,a_{n}$  are real numbers satisfying $\mathop{\sum }\limits_{1\le i<j\le n} a_{i} a_{j} =\frac{n\left(n-1\right)}{2}$  and
+$n\le a_{1} +a_{2} +\ldots +a_{n} <\left(n-1\right)\sqrt{\frac{n}{n-2} }$, then all of them are strictly positive.
+\item If $a_{1} ,a_{2} ,\ldots ,a_{n}$  are real numbers satisfying $\mathop{\sum }\limits_{1\le i<j\le n} a_{i} a_{j} =\frac{n\left(n-1\right)}{2}$  and
+$a_{1} +a_{2} +\ldots +a_{n} \ge n$, then there exists $t\ge 1$ such that $a_{1} +a_{2} +\ldots +a_{n} =n\left(\frac{t^{2} +1}{2t} \right)$.
+\end{enumerate}
+Teoreme, Leme, Propoziții ... :
+\begin{lema}
+Let ... be a fixed real number. We consider the positive real numbers $a_{1} ,a_{2} ,\ldots ,a_{n} $
+satisfying ... .
+Then $\min \left(a_{1} a_{2} \ldots a_{n} \right)=\frac{t^{n-2} \left[n-\left(n-2\right)t^{2} \right]}{2}.$
+\end{lema}
+
+\begin{thebibliography}{9}
+\bibitem{1} (Autor) Inițiala prenume. Nume, \textit{Titlu}, Sursa, Editura, (an), (pagini) 25-26.
+\end{thebibliography}
+
+
+\end{document} 
