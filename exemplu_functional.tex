@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[top=2.5cm,bottom=2.5cm,left=2cm,right=2cm]{geometry}
+\usepackage[english,romanian]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{hyperref}
+
+% Definim teoremele folosind comenzi standard
+\newtheorem{teorema}{Teorema}
+\newtheorem{definitia}{Definiția}
+\newtheorem{lema}{Lema}
+\newtheorem{propozitia}{Propoziția}
+
+\begin{document}
+
+\title{Exemplu Funcțional LaTeX}
+\author{Numele Tău \\
+\small{Student, Universitatea, Orașul, Email}}
+\date{\today}
+\maketitle
+
+\section{Introducere}
+Acesta este un exemplu simplu de document LaTeX care funcționează fără erori. Nu trebuie să te îngrijorezi de formatare - LaTeX se ocupă de totul automat.
+
+\section{Matematică Simplă}
+Iată câteva exemple de formule matematice:
+
+\subsection{Formule Inline}
+Când scrii $x^2 + y^2 = z^2$ în text, LaTeX o formatează automat frumos.
+
+\subsection{Formule Centrate}
+Pentru formule importante, folosești dublu dolar:
+$$\int_{0}^{1} x^2 dx = \frac{1}{3}$$
+
+Sau cu pătrate:
+$$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$$
+
+\section{Teoreme și Definiții}
+\subsection{Definiție}
+\begin{definitia}
+Un număr prim este un număr natural mai mare decât 1 care nu are divizori pozitivi în afară de 1 și el însuși.
+\end{definitia}
+
+\subsection{Teoremă}
+\begin{teorema}
+Există o infinitate de numere prime.
+\end{teorema}
+
+\subsection{Lemă}
+\begin{lema}
+Dacă $n$ este un număr natural, atunci $n^2 + n + 41$ este prim pentru $n = 0, 1, 2, \ldots, 39$.
+\end{lema}
+
+\section{Liste}
+\subsection{Listă Numerotată}
+\begin{enumerate}
+\item Primul element
+\item Al doilea element
+\item Al treilea element
+\end{enumerate}
+
+\subsection{Listă cu Buline}
+\begin{itemize}
+\item Un element
+\item Alt element
+\item Încă un element
+\end{itemize}
+
+\section{Matematică Avansată}
+\subsection{Fracții și Radicali}
+$$\frac{a + b}{c + d} = \frac{\sqrt{a^2 + b^2}}{\sqrt{c^2 + d^2}}$$
+
+\subsection{Integrale și Sume}
+$$\int_{-\infty}^{\infty} e^{-x^2} dx = \sqrt{\pi}$$
+
+$$\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$$
+
+\subsection{Litere Grecești}
+$$\alpha + \beta = \gamma$$
+$$\theta \in [0, 2\pi]$$
+
+\section{Concluzie}
+LaTeX este foarte simplu de folosit! Trebuie să înveți doar câteva comenzi de bază:
+\begin{itemize}
+\item \texttt{\textbackslash section\{...\}} pentru secțiuni
+\item \texttt{\textbackslash begin\{teorema\}...\textbackslash end\{teorema\}} pentru teoreme
+\item \texttt{\$...\$} pentru formule inline
+\item \texttt{\$\$...\$\$} pentru formule centrate
+\end{itemize}
+
+\section{Exercițiu}
+Încearcă să modifici acest document:
+\begin{enumerate}
+\item Schimbă titlul
+\item Adaugă o nouă secțiune
+\item Scrie o formulă matematică simplă
+\item Compilează din nou
+\end{enumerate}
+
+\end{document}
