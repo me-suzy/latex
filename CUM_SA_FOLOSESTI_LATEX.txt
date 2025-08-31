@@ -1,0 +1,119 @@
+===========================================
+CUM SĂ FOLOSEȘTI LATEX - INSTRUCȚIUNI SIMPLE
+===========================================
+
+AI INSTALAT MIKTEX ÎN: d:\Program Files (x86)\MiKTeX\
+
+===========================================
+PASUL 1: INSTALEAZĂ UN EDITOR LATEX
+===========================================
+
+Recomand TeXstudio (gratuit):
+1. Mergi la: https://www.texstudio.org/
+2. Descarcă versiunea pentru Windows
+3. Instalează-l
+
+===========================================
+PASUL 2: DESCHIDE FIȘIERUL
+===========================================
+
+1. Deschide TeXstudio
+2. File -> Open -> selectează "exemplu_simplu.tex"
+3. Vei vedea codul LaTeX în editor
+
+===========================================
+PASUL 3: COMPILEAZĂ DOCUMENTUL
+===========================================
+
+1. Apasă F5 sau butonul "Build & View" (▶️)
+2. LaTeX va compila documentul
+3. Se va deschide automat PDF-ul rezultat
+
+===========================================
+PASUL 4: MODIFICĂ CONȚINUTUL
+===========================================
+
+În fișierul exemplu_simplu.tex:
+
+1. SCHIMBĂ TITLUL:
+   \title{Exemplu Simplu LaTeX} -> \title{Titlul Tău}
+
+2. SCHIMBĂ AUTORUL:
+   \author{Numele Tău -> \author{Prenumele Tău Numele Tău
+
+3. ADAUGĂ SECȚIUNI:
+   \section{Numele Secțiunii}
+   Textul secțiunii...
+
+4. ADAUGĂ FORMULE:
+   $formula$ pentru formule în text
+   $$formula$$ pentru formule centrate
+
+===========================================
+COMENZI DE BAZĂ PE CARE LE VEI FOLOSI:
+===========================================
+
+\section{Nume}           - Secțiune nouă
+\subsection{Nume}        - Subsecțiune
+\begin{teo}...\end{teo} - Teoremă
+\begin{defi}...\end{defi} - Definiție
+\begin{enumerate}        - Listă numerotată
+  \item text
+\end{enumerate}
+\begin{itemize}          - Listă cu buline
+  \item text
+\end{itemize}
+$formula$                - Formula în text
+$$formula$$              - Formula centrată
+
+===========================================
+EXEMPLE DE FORMULE MATEMATICE:
+===========================================
+
+$x^2 + y^2 = z^2$       - Pătrat, plus, egal
+$\frac{a}{b}$            - Fracție
+$\sum_{i=1}^{n} i$      - Sumă
+$\int_{0}^{1} dx$       - Integrală
+$\sqrt{x}$               - Rădăcină pătrată
+$\alpha, \beta, \gamma$  - Litere grecești
+
+===========================================
+CE SĂ FACI DUPĂ COMPILARE:
+===========================================
+
+1. Dacă compilarea reușește -> vei vedea PDF-ul
+2. Dacă sunt erori -> vei vedea mesajele în consolă
+3. Corectează erorile și compilează din nou
+
+===========================================
+SFATURI IMPORTANTE:
+===========================================
+
+✅ NU te îngrijora de formatare - LaTeX se ocupă
+✅ NU uita să închizi comenzile (ex: \end{teo})
+✅ NU uita să compilezi după fiecare modificare
+✅ Folosește $...$ pentru formule simple
+✅ Folosește $$...$$ pentru formule importante
+
+===========================================
+PROBLEME COMUNE:
+===========================================
+
+❌ Eroare "File not found" -> Verifică că toate fișierele sunt în același folder
+❌ Eroare de compilare -> Verifică că nu ai uitat să închizi o comandă
+❌ PDF-ul nu se deschide -> Verifică că MiKTeX este instalat corect
+
+===========================================
+AJUTOR:
+===========================================
+
+- Documentația LaTeX: https://www.latex-project.org/help/
+- Tutoriale online: https://www.overleaf.com/learn
+- Comunitatea: https://tex.stackexchange.com/
+
+===========================================
+SUCCES! 🎉
+===========================================
+
+După ce compilezi primul document, vei vedea că LaTeX nu este complicat!
+Este doar o chestiune de a învăța câteva comenzi simple.
